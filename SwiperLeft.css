@@ -1,0 +1,75 @@
+/*Javascriptpro_*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+} 
+
+body{
+background:#212123;
+background:131418;
+font-family: 'poppins', sans-serif;
+}
+
+.btn{
+height:70px;
+width:240px;
+border-radius:50px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#343434;
+display:flex;
+align-items:center;
+overflow:hidden;
+cursor:pointer;
+}
+
+.btn > span{
+color:#878789;
+position:absolute;
+right:25px;
+font-size:19px;
+transition:all .2s ease;
+letter-spacing:3px;
+}
+
+.btn .arrow-left{
+height:60px;
+width:60px;
+border-radius:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#06D33A;
+color:#001201;
+position:absolute;
+left:7px;
+font-size:20px;
+transition:all .2s ease;
+}
+
+.btn .layer{
+height:200px;
+width:40px;
+background:rgba(255,255,255,0.5);
+position:absolute;
+left:-55px;
+transform:rotate(-35deg);
+transition:all .8s ease;
+}
+
+.btn:hover  .arrow-left{
+left:172px;
+}
+
+.btn:hover span{
+right:80px;
+color:white;
+}
+
+.btn:hover .layer{
+left:255px;
+}
